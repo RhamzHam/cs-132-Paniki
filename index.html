@@ -169,21 +169,28 @@
 				<div class="container">
 					<header>
 						<h2>Let's talk about our data science methodology.</h2>
-						<p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat.</p>
+						<p>We used linear regression as our primary statistical method to examine the relationship between environmental 
+							factors and bat occurrence. Our methodology began with basic data cleaning, which involved removing NaN values 
+							and filtering the relevant data columns to ensure accuracy and consistency. Temperature and precipitation were 
+							selected as the main predictors (independent variables), while bat occurrences served as the response (dependent variable). 
+							The dataset was split into training and testing sets to develop and validate the model. We trained the regression 
+							model to estimate the linear relationship and assessed its performance using metrics such as R², mean squared error (MSE), 
+							and mean absolute error (MAE). This approach provided a structured way to evaluate the combined impact of environmental factors 
+							and set a foundation for incorporating additional variables in future research.</p>
 					</header>
 					<div class="row">
 						<div class="col-6 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+								<a href="#" class="image featured"><img src="images\world map.png" alt="" /></a>
 								<h3><a href="#">Data Preprocessing</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
+								<p>We first took the raster (GeoTiff) files containing the bioclimatic data and reformatted it to csv Pandas could read. Then, missing values were dropped (in particular the ocean was void of data) before performing a spatial join with our occurrence data.</p>
 							</article>
 						</div>
 						<div class="col-6 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-								<h3><a href="#">Machine Learning</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
+								<a href="#" class="image featured"><img src="images\linear regression.png" alt="" /></a>
+								<h3><a href="#">Hypothesis Testing</a></h3>
+								<p>We employed linear regression to evaluate and predict how changes in temperature influence bat occurrence. By modeling bat occurrence as a dependent variable and temperature as the independent variable, the regression analysis allowed us to quantify the relationship between these two factors.</p>
 							</article>
 						</div>
 					</div>
