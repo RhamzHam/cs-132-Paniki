@@ -172,19 +172,8 @@
 						<p>In order to find which environmental factors affect bat populations, we compared our occurrence data to WorldClim’s bioclimatic variables. We took their ssp585 CMIP6 downscaled future climate projections with a temporal scope of 2021-2040 and a resolution of 2.5 arc minutes and attempted to find a statistical relationship to the BatMapPh data.</p>
 						<br>
 						<p>We used linear regression as our primary statistical method to examine the relationship between environmental 
-<<<<<<< HEAD
 							factors and bat occurrence. Our methodology began with basic data cleaning then training the regression 
 							model to estimate the linear relationship. Afterward, we assessed its performance using R². </p>
-=======
-							factors and bat occurrence. Our methodology began with basic data cleaning, which involved removing NaN values 
-							and filtering the relevant data columns to ensure accuracy and consistency. Temperature and precipitation were 
-							selected as the main predictors (qualitative independent variables), while bat occurrences served as the response (qualitative dependent variable). 
-							Due to the independent and dependent variables being qualitative, we utilized a regression model to analyze the relationship between them.
-							The dataset was split into training and testing sets to develop and validate the model. We trained the regression 
-							model to estimate the linear relationship and assessed its performance using metrics such as R², mean squared error (MSE), 
-							and mean absolute error (MAE). This approach provided a structured way to evaluate the combined impact of environmental factors 
-							and set a foundation for incorporating additional variables in future research.</p>
->>>>>>> c3662c42bba82a22ccb4b3a6cec893cc9d949ad9
 					</header>
 					<div class="row">
 						<div class="col-6 col-6-medium col-12-small">
@@ -220,7 +209,7 @@
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/graphs.png" alt="" /></a>
 								<h3><a href="#">Results</a></h3>
-								<p>According to Festa et al, increased temperature can negatively affect bat populations. To test this, a linear regression was performed on bioclimatic variables to try and find a relationship between a certain variable – such as mean annual temperature – and bat occurrence. What was found was that simple regression models were weakly fit to one variable. Thus, a more complex model is needed.</p>
+								<p>According to Festa et al, increased temperature can negatively affect bat populations. To test this, a linear regression was performed on bioclimatic variables to try and find a relationship between a certain variable – such as mean annual temperature – and bat occurrence. What was found was that simple regression models were weakly fit to one variable. For example, model for the mean annual air temperature had an R² of 0.234. Thus, a more complex model is needed.</p>
 							</article>
 						</div>
 						<div class="col-6 col-6-medium col-12-small">
