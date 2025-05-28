@@ -10,12 +10,25 @@
   <!-- Hero Section -->
   <div id="top" class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('/bat_distribution.png');">
     <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-    <div class="relative text-center max-w-2xl px-6">
-      <h2 class="text-5xl font-extrabold text-purple-300 mb-4 drop-shadow-lg">Predicting Bat Occurrence<br/>in the Philippine Climate</h2>
-      <p class="text-lg mb-6">Analyzing how changing environmental factors impact our native bat populations for better conservation.</p>
-      <a href="#overview" class="px-6 py-3 bg-purple-500 hover:bg-purple-600 rounded-full font-semibold">Learn More</a>
+    <div class="relative text-center max-w-2xl px-6 text-white">
+        <h2 class="text-5xl font-extrabold text-purple-300 mb-4 drop-shadow-lg">Predicting Bat Occurrence<br/>in the Philippine Climate</h2>
+        <p class="text-lg mb-6">Analyzing how changing environmental factors impact our native bat populations for better conservation.</p>
+
+        <!-- Project Description -->
+        <p class="mb-4">
+        And this is our project, <strong>Analyzing the Relationship Between Environmental Factors and Bat Population in the Philippines</strong>.
+        This project aims to analyze the correlation of different environmental factors such as climate, humidity, wildlife, etc. to the population of bats in the Philippines.
+        It also aims to highlight the bat species that are most endangered due to changing climate conditions.
+        </p>
+
+        <!-- Team Members -->
+        <p class="font-semibold">Data Science Team</p>
+        <ul class="mt-2 space-y-1">
+        <li>May Potot, WFX Autumn</li>
+        <li>Abraham Sahi, WFX Autumn</li>
+        </ul>
     </div>
-  </div>
+    </div>
 
   <!-- Overview -->
   <section id="overview" class="py-20 bg-gray-900">
@@ -38,6 +51,18 @@
     </div>
   </section>
 
+  <div id="top" class="relative h-screen flex items-center justify-center" style="background-image: url('https://images.squarespace-cdn.com/content/v1/545b3746e4b0a4696b72a563/1591949371083-N6C2EPMKH05UWM8ZIUOF/shutterstock_1282913071.jpg?format=1500w');">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative text-center max-w-3xl px-6">
+        <h2 class="text-5xl font-extrabold text-purple-300 mb-4 drop-shadow-lg">
+        Importance of Bat Conservation in the Philippines
+        </h2>
+        <p class="text-lg mb-6 text-white">
+        Bats are critical to the ecological balance of the Philippines, functioning as natural pest regulators, pollinators, and seed dispersers. Despite their importance, bat populations across the country are under growing threat due to rapid environmental changes brought by climate change, deforestation, and urban development. These factors lead to habitat fragmentation and make it harder for researchers and conservationists to predict where bat species are likely to occur. This project addresses that gap by analyzing environmental and climate data to model the occurrence of native bat species across the archipelago. Through this work, we aim to empower conservation efforts with data-driven insights, enabling more strategic habitat protection and resource allocation to preserve the country's unique biodiversity.
+        </p>
+    </div>
+    </div>
+
   <!-- Data -->
   <section id="data" class="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
     <div class="max-w-5xl mx-auto px-6">
@@ -55,26 +80,25 @@
       </div>
     </div>
   </section>
-
-  <!-- Methods -->
-  <section id="methods" class="py-20 bg-gray-900">
-    <div class="max-w-4xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-8 text-purple-300">Methods</h2>
-      <p class="mb-6">Data preprocessing involved converting GeoTIFF rasters to CSV, spatial joins with occurrence points, and filtering out voids. Linear regression models evaluated temperature and precipitation effects, using R², MSE, and MAE for performance.</p>
-      <div class="flex justify-center space-x-8">
+<!-- Methodology Section -->
+<section id="methodology" class="bg-gray-900 text-white py-20 px-6">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-4xl font-extrabold text-purple-300 mb-6 drop-shadow">Our Data Science Methodology</h2>
+    <p class="text-lg leading-relaxed text-gray-300">
+      In order to identify which environmental factors influence bat populations, we compared our occurrence data to WorldClim’s bioclimatic variables. Specifically, we used the ssp585 CMIP6 downscaled future climate projections (2021–2040) at a resolution of 2.5 arc minutes and sought statistical correlations with BatMapPh’s bat occurrence dataset.
+    </p>
+    <p class="text-lg leading-relaxed text-gray-300 mt-4">
+      Linear regression was our primary method to evaluate the relationship between environmental factors and bat presence. We began with essential data cleaning—removing NaN values and filtering relevant columns to maintain data accuracy. Our key predictors included temperature and precipitation, chosen as the main independent variables, while bat occurrence data served as the dependent variable.
+    </p>
+    <p class="text-lg leading-relaxed text-gray-300 mt-4">
+      With our dataset split into training and testing sets, we trained the regression model to understand the linear relationship. Model performance was evaluated using R², Mean Squared Error (MSE), and Mean Absolute Error (MAE). This structured approach provided a strong foundation for assessing the influence of climate on bat populations, and it opens pathways for including more complex variables in future research.
+    </p>
+    <div class="flex flex-row justify-center mt-8 space-x-4 p-4">
         <img src="/world map.png" alt="Spatial preprocessing" class="w-128 rounded-lg shadow-lg" />
         <img src="/linear regression.png" alt="Regression plot" class="w-128 rounded-lg shadow-lg" />
-      </div>
-    </div>
-  </section>
 
-  <!-- Importance -->
-  <section id="importance" class="py-20 bg-gradient-to-b from-gray-800 to-gray-900">
-    <div class="max-w-3xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-4 text-purple-300">Why This Study Matters</h2>
-      <p>Bats are vital pollinators, pest controllers, and ecosystem engineers. Understanding how climate change alters their distribution helps inform conservation strategies, disease outbreak prevention, and biodiversity maintenance in the Philippines.</p>
     </div>
-  </section>
+  </div>
 
   <!-- Results -->
   <section id="results" class="py-20 bg-gray-900">
