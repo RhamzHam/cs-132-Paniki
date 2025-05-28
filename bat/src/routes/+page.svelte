@@ -9,8 +9,13 @@
 <main class="bg-gradient-to-b from-gray-800 via-gray-900 to-black text-gray-100">
   <!-- Hero Section -->
   <div id="top" class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('/bat_distribution.png');">
-    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-    <div class="relative text-center max-w-2xl px-6 text-white">
+    <div class="absolute inset-0" style="
+  background-image: url('/bat_distribution.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+"></div>
+    <div class="relative text-center max-w-3xl p-12 bg-gray-800 bg-opacity-40 shadow-lg rounded-2xl">
         <h2 class="text-5xl font-extrabold text-purple-300 mb-4 drop-shadow-lg">Predicting Bat Occurrence<br/>in the Philippine Climate</h2>
         <p class="text-lg mb-6">Analyzing how changing environmental factors impact our native bat populations for better conservation.</p>
 
@@ -51,9 +56,14 @@
     </div>
   </section>
 
-  <div id="top" class="relative h-screen flex items-center justify-center" style="background-image: url('https://images.squarespace-cdn.com/content/v1/545b3746e4b0a4696b72a563/1591949371083-N6C2EPMKH05UWM8ZIUOF/shutterstock_1282913071.jpg?format=1500w');">
-    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-    <div class="relative text-center max-w-3xl px-6">
+  <div id="top" class="relative h-screen flex items-center justify-center" >
+    <div class="absolute inset-0" style="
+  background-image: url('https://www.humaneworld.org/sites/default/files/styles/sa_social_media_facebook/public/2021-05/hero-bats-505014.jpg?h=e22bf01e&itok=zaOG7WJ6');
+  background-size: 150%;
+  background-position: center;
+  background-repeat: no-repeat;
+"></div>
+    <div class="relative text-center max-w-3xl p-12 bg-gray-800 bg-opacity-40 shadow-lg rounded-2xl">
         <h2 class="text-5xl font-extrabold text-purple-300 mb-4 drop-shadow-lg">
         Importance of Bat Conservation in the Philippines
         </h2>
@@ -99,7 +109,7 @@
 
     </div>
   </div>
-
+</section>
   <!-- Results -->
   <section id="results" class="py-20 bg-gray-900">
     <div class="max-w-4xl mx-auto px-6">
@@ -117,6 +127,30 @@
       </div>
     </div>
   </section>
+<!-- Machine Learning Section -->
+    <div class="w-screen bg-gray-800 mx-auto px-6 py-6">
+        <section id="machine-learning" class="max-w-4xl bg-gray-800 mx-auto px-6 py-12">
+        <h3 class="text-3xl font-bold text-purple-700 mb-4">Machine Learning Approach</h3>
+        <p class="text-lg text-white-800 leading-relaxed">
+            Our machine learning methodology was adapted from Daniel Furman’s practical guide on species distribution modeling. In an effort to predict bat presence in various environmental conditions, we implemented a variety of supervised learning algorithms to identify patterns in species occurrences. We utilized several powerful models, including Random Forest from scikit-learn, as well as gradient boosting frameworks like XGBoost and LightGBM, which are known for their efficiency and high performance with structured datasets.
+        </p>
+        <p class="text-lg text-white-800 leading-relaxed mt-4">
+            To train these models effectively, we generated pseudo-absence points at a 1:1 ratio relative to our presence data. This step was crucial due to the lack of comprehensive absence data in biodiversity datasets. By simulating absence data in a controlled and randomized manner, we were able to train binary classifiers that distinguish between areas of likely bat presence and absence based on environmental variables. These variables included a suite of bioclimatic predictors derived from WorldClim data, ensuring our features captured critical temperature and precipitation patterns.
+        </p>
+        </section>
+    </div>  
+    <!-- Conclusion Section -->
+    <div class="w-screen bg-gray-800 mx-auto px-6 pb-6">
+        <section id="conclusion" class="max-w-4xl mx-auto px-6 py-12">
+            <img src="/machine_learning.png" alt="Bat icon" class="w-128 mx-auto mb-6" />
+            <h3 class="text-3xl font-bold text-purple-700 mb-4">Conclusion</h3>
+            <p class="text-lg text-white-800 leading-relaxed">
+                The model performed poorly with an accuracy no better than random chance. This may be due to the species modeled having broad geographical and environmental ranges. To develop better and more performant models, more occurrence data is necessary so that the ranges of these bats are more accurately known. This outcome highlights the dire knowledge gap regarding the populations of the Philippines’ wildlife. More research is sorely needed to provide the necessary knowledge to preserve our endemic species.
+            </p>
+        </section>
+
+    </div>
+
 
   <!-- Team & Contact -->
   <section id="team" class="py-20 bg-gray-800">
