@@ -6,6 +6,8 @@ This project analyzes how changing environmental factors impact native bat popul
 
 ## 📦 Prerequisites
 
+The website is contained in the "bat" folder
+
 Before running the project locally, ensure you have the following installed:
 
 - **Node.js** (v18 or higher recommended): [Download Node.js](https://nodejs.org/)
